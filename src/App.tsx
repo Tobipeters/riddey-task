@@ -6,11 +6,11 @@ import {
   titleStyle,
   detailStyle,
 } from "./styles.css";
-import { FeatureList, SliderBox, Button } from "./components";
+import { FeatureList, ProgressBox, Button } from "./components";
 
 export const App = () => {
   const [value, setValue] = React.useState<number>(0);
-  const maxValue: number = 10
+  const maxValue: number = 10;
 
   const handleChange = () => {
     setValue(value + 1);
@@ -43,7 +43,7 @@ export const App = () => {
 
         <FeatureList />
 
-        <SliderBox progressValue={value} maxValue={maxValue} />
+        <ProgressBox progressValue={value} maxValue={maxValue} />
 
         <Button
           text="Add New Board"
