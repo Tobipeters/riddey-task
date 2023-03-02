@@ -1,12 +1,12 @@
 import * as React from "react";
-import { progressStyle } from "./Slider.css";
+import { progressStyle } from "./ProgressBar.css"
 
 interface IProps {
   value: string;
   max: number;
 }
 
-export const Slider = ({ value, max }) => {
+export const ProgressBar = ({ value, max }) => {
   return (
     <progress
       value={value}
