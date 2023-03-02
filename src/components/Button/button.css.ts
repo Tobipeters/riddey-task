@@ -4,6 +4,7 @@ import { vars, flexCenter } from "../../index.css";
 const opacityForAll = {
   filter: "alpha(opacity=40)", // IE 5-7
   opacity: "0.4",
+  cursor: "not-allowed",
 };
 
 export const buttonStyle = style({
