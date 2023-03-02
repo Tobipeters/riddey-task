@@ -1,4 +1,4 @@
 export * from "./FeatureList";
-export * from "./SilderBox"
-export * from "./Slider"
+export * from "./ProgressBox"
+export * from "./ProgressBar"
 export * from "./Button"

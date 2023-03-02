@@ -3,15 +3,15 @@ import {
   titleStyle,
   sliderContainerStyle,
   subtitleStyle,
-} from "./sliderBox.css";
-import { Slider } from "..";
+} from "./ProgressBox.css";
+import { ProgressBar } from "..";
 
 interface IProps {
   progressValue: number;
   maxValue: number;
 }
 
-export const SliderBox: React.FC<IProps> = ({ progressValue, maxValue }) => {
+export const ProgressBox: React.FC<IProps> = ({ progressValue, maxValue }) => {
   return (
     <section className={sliderContainerStyle}>
       <h5 className={titleStyle}>Current usage</h5>
@@ -19,7 +19,7 @@ export const SliderBox: React.FC<IProps> = ({ progressValue, maxValue }) => {
         {progressValue} out of 10 boards in use
       </label>
 
-      <Slider value={progressValue} max={maxValue} />
+      <ProgressBar value={progressValue} max={maxValue} />
     </section>
   );
 };
