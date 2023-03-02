@@ -8,13 +8,28 @@ export const progressStyle = style({
   height: "4px",
   display: "flex",
   appearance: "none",
+  transition: "width  .2s linear !important",
+  WebkitTransition: "width .2s linear !important",
+
   selectors: {
     "&::-webkit-progress-bar ": {
       background: "#EBECEC",
+      transition: "width  .2s linear !important",
+      WebkitTransition: "width .2s linear !important",
     },
     "&::-webkit-progress-value": {
       backgroundColor: vars.color.primary,
-      transition: "width .2s linear;",
+      transition: "all .2s linear",
+      WebkitTransition: "all .2s linear",
+    },
+    // Firefox fallback
+    "&::-moz-progress-bar": {
+      backgroundColor: vars.color.primary,
+      transition: "width  .2s linear !important",
+      WebkitTransition: "width .2s linear !important",
+    },
+    "&::-ms-fill": {
+      backgroundColor: vars.color.primary,
     },
   },
 });

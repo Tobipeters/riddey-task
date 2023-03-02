@@ -14,6 +14,11 @@ export const cardStyle = style({
   padding: "1.875rem 1.25rem",
   boxShadow: "0px 10px 40px rgba(0, 0, 0, 0.12)",
   width: "320px",
+  "@media":{
+    "screen and (max-width: 350px)":{
+      width: "280px",
+    }
+  }
 });
 
 export const iconHolderStyle = style({
@@ -31,6 +36,11 @@ export const titleStyle = style({
   lineHeight: "24px",
   textAlign: "center",
   color: vars.color.typography.title,
+  "@media":{
+    "screen and (max-width: 350px)":{
+      margin: "0.875rem 0 0.375rem",
+    }
+  }
 });
 
 export const detailStyle = style({
